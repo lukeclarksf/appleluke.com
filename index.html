@@ -1,58 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Luke - My Photo</title>
-<style>
-  body {
-    /* McKinsey Blue: #135d96 */
-    background-color: #09314f; 
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    margin: 0; 
-    padding: 20px; /* Add some padding just in case */
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-  .text-container {
-    padding-top: 50px;
-    color: white; 
-    font-size: 2em; /* Slightly smaller to accommodate the image */
-    font-family: Arial, sans-serif; 
-    margin-bottom: 20px; /* Space between text and image */
-  }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
 
-  .photo-container img {
-    /* Style the image */
-    max-width: 300px; /* Maximum size for the photo */
-    height: auto;
-  }
-  a {
-    color: #92c4eb;
-  }
-  .contact {
-    padding: 10px;
-    color: white;
-  }
-</style>
+        .header-logo {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 50px;
+            width: 100%;
+        }
+
+        .profile-image {
+            width: 320px;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+
+        .name-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .website-link {
+            color: #ffffff;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        .description {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 60px;
+            color: #e0e0e0;
+        }
+
+        .contact-info {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .name-row {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  
-<div class="photo-container">
-  <img src="Luke Clark.png" alt="Luke's Photo">
-</div>
 
-<div class="text-container">
-  Luke
-</div>
+    <div class="container">
+        <div class="header-logo"></div>
 
-<div class="contact">I achieved FINRA Security Industry Essentials (SIE) Score of 52% on November 24, 2025 with Prometric.</a></div>
-<div class="contact">Vitae at <a target="_blank" href="https://lukeclarksf.com">lukeclarksf.com</a></div>
-<div class="contact">Email me at <a href="mailto:lukeclarksf@gmail.com">lukeclarksf@gmail.com</a></div>
+        <div class="content-wrapper">
+            <img src="Luke Clark.png" alt="Luke" class="profile-image">
 
+            <div class="info-section">
+                <div class="name-row">
+                    <h1>Luke</h1>
+                    <a href="https://appleluke.com" class="website-link">appleluke.com</a>
+                </div>
+
+                <p class="description">
+                    I scored 52% on FINRA SIE with Prometric<br>
+                    on Nov 24, 2025.
+                </p>
+
+                <div class="contact-info">
+                    Vitae: <a href="https://lukeharvard.com">lukeharvard.com</a><br>
+                    Email me: <a href="mailto:luke@lukefreshfields.com">luke@lukefreshfields.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
