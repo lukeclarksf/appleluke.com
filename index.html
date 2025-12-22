@@ -54,9 +54,12 @@
             font-size: 18px;
         }
 
-        .nasdaq-link {
+        .link-style {
             color: #ffffff;
             text-decoration: underline;
+        }
+
+        .nasdaq-link {
             display: block;
             margin-bottom: 5px;
         }
@@ -64,7 +67,14 @@
         .profile-image {
             width: 100%;
             border-radius: 4px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+        }
+
+        .allen-link {
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
         }
 
         .firm-footer {
@@ -101,18 +111,23 @@
         }
 
         .website-link {
-            color: #ffffff;
-            text-decoration: underline;
             font-size: 18px;
         }
 
         .description {
             font-size: 19px;
             line-height: 1.5;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             color: #ffffff;
         }
 
+        .contact-info {
+            font-size: 19px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        /* Bottom Row */
         .bottom-row {
             display: flex;
             justify-content: space-between;
@@ -120,18 +135,19 @@
             margin-top: auto;
         }
 
-        .contact-info {
+        .tech-links {
             font-size: 19px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
-        .contact-info a {
+        .tech-links a {
+            display: block;
             color: #ffffff;
             text-decoration: underline;
         }
 
         .prometric-logo {
-            width: 220px;
+            width: 250px;
             height: auto;
         }
 
@@ -157,11 +173,12 @@
         <div class="main-layout">
             <div class="left-col">
                 <div class="nasdaq-info">
-                    <a href="https://lukenasdaq.com" class="nasdaq-link">lukenasdaq.com</a>
+                    <a href="https://lukenasdaq.com" class="link-style nasdaq-link">lukenasdaq.com</a>
                     <div>NASDAQ: Luke</div>
                 </div>
                 
                 <img src="Luke Clark.png" alt="Luke" class="profile-image">
+                <a href="https://lukeallenco.com" class="link-style allen-link">lukeallenco.com</a>
                 <div class="firm-footer">ALLEN & COMPANY</div>
             </div>
 
@@ -169,8 +186,8 @@
                 <div class="top-info-row">
                     <h1>Luke</h1>
                     <div class="external-links">
-                        <a href="https://appleluke.com" class="website-link">appleluke.com</a>
-                        <a href="https://lukemckinsey.com" class="website-link">lukemckinsey.com</a>
+                        <a href="https://appleluke.com" class="link-style website-link">appleluke.com</a>
+                        <a href="https://lukemckinsey.com" class="link-style website-link">lukemckinsey.com</a>
                     </div>
                 </div>
 
@@ -181,10 +198,16 @@
                     With Prometric I will take GMAT in December, 2025.
                 </div>
 
+                <div class="contact-info">
+                    Vitae at <a href="https://lukeharvard.com" class="link-style">lukeharvard.com</a><br>
+                    Email me <a href="mailto:luke@lukefreshfields.com" class="link-style">luke@lukefreshfields.com</a>
+                </div>
+
                 <div class="bottom-row">
-                    <div class="contact-info">
-                        Vitae at <a href="https://lukeharvard.com">lukeharvard.com</a><br>
-                        Email me <a href="mailto:luke@lukefreshfields.com">luke@lukefreshfields.com</a>
+                    <div class="tech-links">
+                        <a href="https://lukepython.com">lukepython.com</a>
+                        <a href="https://lukekeras.com">lukekeras.com</a>
+                        <a href="https://luketensorflow.com">luketensorflow.com</a>
                     </div>
                     
                     <img src="Prometric.png" alt="Prometric" class="prometric-logo">
